@@ -1,0 +1,410 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Bar Styles Here  */
+
+.navbar-1 {
+  background-color: #393285;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.collapse-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn-Nav {
+  width: 234px;
+  height: 36px;
+  font-family: ABeeZee;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  color: #393285;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+/* Side Nav Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  width: 65px;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+/* Responsive styles For NavBar */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
+
+/* Home Page styles here  */
+
+.background {
+  background: url('../public/images/background.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* heading style here  */
+
+.heading {
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: auto;
+  /* Adjusted for responsiveness */
+  position: relative;
+  top: 2rem;
+  color: #393285;
+}
+
+.heading-1 {
+
+  height: auto;
+  /* Adjusted for responsiveness */
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  color: #393285;
+}
+
+.tagline {
+  height: auto;
+  /* Adjusted for responsiveness */
+  top: 10%;
+  /* Adjusted for responsiveness */
+  text-align: center;
+  position: relative;
+  font-family: ABeeZee;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33px;
+  top: 2rem;
+  letter-spacing: 0em;
+}
+
+/* Cards Style here */
+/* Must Check */
+
+.Cards{
+  display: flex;
+gap: 14%;
+}
+
+.Card {
+  width: 378px;
+  position: absolute;
+  height: 329px;
+  /* right: 38rem; */
+  top: 18rem;
+  border-radius: 15px;
+  background-color: rgba(57, 50, 153, 0.15);
+  left: 12rem;
+  /* Setting opacity for background color */
+}
+
+.body {
+  position: relative;
+  bottom: 7rem;
+}
+
+.employer {
+  height: 21rem;
+  position: relative;
+  top: 14rem;
+  left: 8rem;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+.content {
+  width: 10rem;
+  position: relative;
+  left: 45%;
+}
+
+.content p {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.Arrow {
+  transform: rotate(180deg);
+  height: 7rem;
+}
+
+.content-1 {
+  width: 10rem;
+  position: relative;
+  left: 12%;
+}
+
+.content-1 p {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.JobSeeker-div {
+  position: absolute;
+
+}
+
+.jobSeeker {
+  height: 21rem;
+  position: relative;
+  left: 5vw;
+  z-index: 1;
+  top: 25vh;
+}
+
+.btn {
+  position: relative;
+  top: 14rem;
+  left: 25%;
+  font-family: ABeeZee;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  background-color: #393285;
+  color: white;
+  border-radius: 15px;
+}
+
+/*Side Navbar style */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* Position the navbar at the top right corner of the screen */
+  padding: 20px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  width: 65px;
+}
+
+/* Navbar links styles */
+.navbar ul {
+  list-style-type: none;
+  /* Remove bullet points from list */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+  /* Text color of links */
+  font-size: 16px;
+  /* Font size of links */
+}
+
+.navbar a:hover {
+  color: #ddd;
+  /* Change text color on hover */
+}
+
+/* Login Page Styles */
+
+.login-container{
+  display: flex;
+height: 50vh;
+width: 100%;
+}
+
+.Desc{
+  width: 50%;
+  position: relative;
+top: 5vh;
+}
+
+.Desc h1{
+  text-align: center;
+font-size: 53px;
+width: 80%;
+margin: 0 auto;
+line-height: 77.45px;
+color:#393285;
+}
+
+.Desc p{
+  text-align: center;
+}
+
+.register p{
+  text-align: left;
+  font-size: 10px;
+  width: 95px;
+  margin-left: 35px;
+  position: relative;
+left: 35px;
+top: 25px;
+}
+
+.login{
+  width: 50%;
+}
+
+.Login{
+  height: 85%;
+  width: 85%;
+  border-radius: 50px;
+background-color: #DFDCF7;
+place-content: center;
+display: grid;
+}
+
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login p{
+  text-align: center;
+}
+
+.Login button{
+  width: 25vw;
+height: 6vh;
+top: 253px;
+left: 829px;
+border-radius: 10px;
+background-color: #393285;
+margin: 20px 0;
+color: white;
+}
+
+.Login h3{
+  font-family: Inter;
+font-size: 32px;
+font-weight: 600;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 25px;
+}
+
+/* Job Form */
+.job-form div input{
+  background-color: #DFDCF7; 
+}
+
+.post-job{
+  background-color: #323985;
+}
+
+.rounded{
+  background-color: #393285;
+}

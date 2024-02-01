@@ -1,0 +1,208 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-1{
+    background-color: #393285;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+.collapse-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-Nav {
+    width: 234px;
+    height: 36px;
+    font-family: ABeeZee;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    color: #393285;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    width: 65px;
+}
+
+/* Navbar links styles */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navbar ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+.background {
+    background: url('../public/images/background.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading {
+    font-family: Inter;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: auto; /* Adjusted for responsiveness */
+    position: relative;
+    color: #393285;
+}
+
+.heading-1 {
+
+    height: auto; /* Adjusted for responsiveness */
+    font-family: Inter;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    color: #393285;
+}
+
+.tagline {
+    height: auto; /* Adjusted for responsiveness */
+    top: 10%; /* Adjusted for responsiveness */
+    text-align: center;
+    position: relative;
+    font-family: ABeeZee;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+}
+
+
+.Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Cards {
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+.Card {
+    width: 100%; /* Initially, cards take full width */
+    max-width: 378px; /* Set maximum width for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    border-radius: 15px;
+    background-color: rgba(57, 50, 153, 0.15);
+    margin-bottom: 20px; /* Add some space between cards */
+    margin: 0 auto;
+}
+
+.employer{
+    max-width: 45%;
+}
+
+.jobSeeker{
+    max-width: 45%;
+}
+
