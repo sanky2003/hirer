@@ -6,7 +6,7 @@ import arrowR from './Images/arrow-1.png';
 
 const Card = ({ title, description, arrowImage, arrowRotation }) => {
   return (
-    <div className="max-w-md bg-white rounded-xl overflow-hidden shadow-lg absolute inset-0 bg-opacity-75 Card">
+    <div className="max-w-md bg-white rounded-xl overflow-hidden shadow-lg inset-0 bg-opacity-75 Card">
       <div className="md:flex">
         <div className="p-8 content">
           <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
